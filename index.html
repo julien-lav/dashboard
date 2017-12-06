@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Hacking Project</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="nowui.css">
+    <link rel="stylesheet" href="custom.css">
+
+  
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-105991867-1', 'auto');
+      </script>
+  
+
+  </head>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="<%= root_path %>" rel="tooltip">
+                    The Hacking Project
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="../assets/img/blurred-image-1.jpg">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="<%= home_about_path %>">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<%= home_peer_learning_path %>">Le peer-learning</a>
+                    </li>
+           			<li class="nav-item">
+						<div class="dropdown">
+						    <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown" id="navbarDropdownMenuLink1">
+						    	Nos cursus
+						    </a>
+						    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <a class="dropdown-item" href="<%= home_code_path %>">Code</a>
+                                <div class="dropdown-divider"></div>
+			                    <a class="dropdown-item" href="<%= home_sales_path %>">Sales</a>
+    						</ul>
+						</div>
+					</li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown" id="navbarDropdownMenuLink1">
+                                Liens pratiques
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <a class="dropdown-item" href="<%= home_modalites_path %>">Modalités</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="<%= home_faq_path %>">FAQ</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="<%= home_contact_path %>">Contact</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Suivez-nous sur Facebook" data-placement="bottom" href="https://www.facebook.com/thehackingproject/" target="_blank">
+                            <i class="fa fa-facebook-square"></i>
+                            <p class="d-lg-none d-xl-none">Facebook</p>
+                        </a>
+                    </li>
+                    
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown" id="navbarDropdownMenuLink1">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                    <a class="dropdown-item" href="<%= dashboard_path %>">Mon profil</a>
+                                    <div class="dropdown-divider"></div>
+                                 
+                                </ul>
+                            </div>
+                        </li>
+                   
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown" id="navbarDropdownMenuLink1">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                    <a class="dropdown-item" href="<%= new_user_registration_path %>">S'inscrire</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="<%= new_user_session_path %>">Se connecter</a>
+                                </ul>
+                            </div>
+                        </li>
+                  
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+<div class="container-fluid block-dash">
+    <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+
+            <ul class="nav-dash nav-dash-3"> 
+
+            <img class="nav-img" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-1/p200x200/20708444_181946462347085_6572745527018359982_n.png?oh=b7e7dde414bf32f79d52dcbbdd685674&oe=5A8DFE5D">
+                <li><a href="#">Mon profil</a></li>
+                <li><a href="#" class="current">Semaine 4<i class="fa fa-calendar" aria-hidden="true"></i></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#">Newham</a></li>
+                <li><a href="#">Hydrologist</a></li>
+                <li><a href="#">Appreciable</a></li>
+                <li><a href="#">Cytopathologically</a></li>
+                <li><a href="#">Amphiaraus</a></li>
+                <li><a href="#">Soberingly</a></li>
+                <li><a href="#">Mayest</a></li>
+            </ul>
+        </nav>
+
+<!-- dans le cas d'une non-inscription, on doit me dire de m'inscrire à une formation -->
+<!-- 1 montrer les formations auxquelles je suis inscrit -->
+
+
+        <div class="container">
+            <div class="row">
+                <h3 class="col-md-8">Bienvenue <%= @user.first_name %> <%= @user.last_name %> !</h3>
+                <div class="avatar-status col-md-2"><span class="badge badge-success">Mousaillon, tu es !</span></div>
+            </div>
+                <p class="col-md-8">
+                Super, tu es inscris à la session <%= @course.name%> qui commence le <%=@start_date_french%> <br>
+                Voici le precursus à suivre: CodeCademy Ruby + installer MacOS / Linux. <br>
+                Attention tu dois rendre les éléments du pré-cursus avant le <%=@limit_date_precourse_french%> à 23h59 !
+            </p>
+        
+            <div class="container"> 
+                <div class="wrapper">   
+                <div class="arrow-steps clearfix">
+                      <div class="step current"><span>Lundi</span> </div>
+                      <div class="step"> <span>Mardi</span> </div>
+                      <div class="step"> <span>Mercredi</span> </div>
+                      <div class="step"> <span>Jeudi<i class="fa fa-lock" aria-hidden="true"></i></span> </div>
+                      <div class="step"> <span>Vendredi</span> </div>
+                </div>
+                <!-- <div class="nav clearfix">
+                    <a href="#" class="prev"><button class="btn btn-primary btn-simple">Previous</button></a>
+                    <div class="spacer"></div>
+                    <a href="#" class="next pull-right"><button class="btn btn-primary btn-simple">Next</button><a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="container">
+                <p>Some content over there !!!</p>
+                <p>Some content over there !!!</p>
+                <p>Some content over there !!!</p>
+            </div>
+
+
+
+
+
+<footer class="footer footer-default">
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>, Made with ❤️ in France</a>.
+        </div>
+    </div>
+</footer>
+
+
+
