@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta charset="UTF-8">
     <title>The Hacking Project</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
@@ -110,6 +111,8 @@
         </div>
     </nav>
     <!-- End Navbar -->
+
+
 <div class="container-fluid block-dash">
     <div class="row">
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
@@ -117,16 +120,21 @@
             <ul class="nav-dash nav-dash-3"> 
 
             <img class="nav-img" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-1/p200x200/20708444_181946462347085_6572745527018359982_n.png?oh=b7e7dde414bf32f79d52dcbbdd685674&oe=5A8DFE5D">
-                <li><a href="#">Mon profil</a></li>
-                <li><a href="#" class="current">Semaine 4<i class="fa fa-calendar" aria-hidden="true"></i></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#">Newham</a></li>
-                <li><a href="#">Hydrologist</a></li>
-                <li><a href="#">Appreciable</a></li>
-                <li><a href="#">Cytopathologically</a></li>
-                <li><a href="#">Amphiaraus</a></li>
-                <li><a href="#">Soberingly</a></li>
-                <li><a href="#">Mayest</a></li>
+                <li><a class="my-profil" href="#">Mon profil</a></li>
+
+
+                <li class="show-weeks"><a href="#" class="current">
+                    Semaine 4 <i class="fa fa-calendar" aria-hidden="true"></i></a>
+                </li>
+                     
+ 
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">Correction</a></li>
+                <li><a href="#">Leçons</a></li>
+                <li><a href="#">Mes stats</a></li>
+                <li><a href="#">Projet final</a></li>
+                <li><a href="#">Evénements &amp; Ateliers</a></li>
+                <li><a href="#">Modalités</a></li>
             </ul>
         </nav>
 
@@ -137,40 +145,95 @@
         <div class="container">
             <div class="row">
                 <h3 class="col-md-8">Bienvenue <%= @user.first_name %> <%= @user.last_name %> !</h3>
-                <div class="avatar-status col-md-2"><span class="badge badge-success">Mousaillon, tu es !</span></div>
+                <div class="avatar-status col-md-2">
+               <div class="progress-container progress-success">
+                <span class="progress-badge"><span class="badge badge-success">Mousaillon, tu es ! </span><span class="spacer-left-40"></span></span>
+                <div class="progress">
+                    
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    <span class="progress-value">&nbsp; 60%</span>
+                    </div>
+                </div>
             </div>
-                <p class="col-md-8">
+
+            </div>
+            </div>
+                <p class="col-md-8" style="margin-left: 15px;">
                 Super, tu es inscris à la session <%= @course.name%> qui commence le <%=@start_date_french%> <br>
                 Voici le precursus à suivre: CodeCademy Ruby + installer MacOS / Linux. <br>
                 Attention tu dois rendre les éléments du pré-cursus avant le <%=@limit_date_precourse_french%> à 23h59 !
-            </p>
+                </p>
         
-            <div class="container"> 
-                <div class="wrapper">   
+        <div class="container"> 
+            <div class="wrapper-progress">   
                 <div class="arrow-steps clearfix">
-                      <div class="step current"><span>Lundi</span> </div>
-                      <div class="step"> <span>Mardi</span> </div>
-                      <div class="step"> <span>Mercredi</span> </div>
-                      <div class="step"> <span>Jeudi<i class="fa fa-lock" aria-hidden="true"></i></span> </div>
-                      <div class="step"> <span>Vendredi</span> </div>
-                </div>
+                      <div class="step current"><span>Lundi</span> 
+
+                      </div>
+                      <div class="step"> <span>Mardi</span>
+
+                      </div>
+
+                      <div class="step"> <span>Mercredi</span> 
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </div>
+
+                      <div class="step"> <span>Jeudi</span> 
+                        <i class="fa fa-lock" aria-hidden="true"></i></div>
+                      <div class="step"> <span>Vendredi</span> 
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </div>
+
                 <!-- <div class="nav clearfix">
                     <a href="#" class="prev"><button class="btn btn-primary btn-simple">Previous</button></a>
                     <div class="spacer"></div>
                     <a href="#" class="next pull-right"><button class="btn btn-primary btn-simple">Next</button><a>
                 </div> -->
+                </div>
             </div>
+            <p class="col-md-10">
+
+                Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world. 
+                <br>
+                <br>
+                Et c'est plutot nice !
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A illo placeat vero alias sapiente. Ut doloremque minima aperiam repellendus, enim excepturi expedita officia eligendi minus amet molestias odit natus neque!
+            </p>
         </div>
     </div>
 </div>
-            <div class="container">
-                <p>Some content over there !!!</p>
-                <p>Some content over there !!!</p>
-                <p>Some content over there !!!</p>
+
+<div class="section section-tabs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-10 col-xl-10 ml-auto mr-auto">
+                            <!-- <p class="category">Tabs with Icons on Card</p> -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <h3 class="text-center">Booba</h3>
+
+                                            <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. </p>
+                                    
+                                            <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
+                                       
+                                            <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. </p>
+                                
+                                            <p>"I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at." </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End Tabs on plain Card -->
+                             <div class="col-md-2 col-lg-2 col-xl-2 ml-auto mr-auto"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
+        </div>
+        
 
 
 <footer class="footer footer-default">

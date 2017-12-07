@@ -1,14 +1,62 @@
+.hover-stylay {
+  box-shadow: 0 10px 40px 0 rgba(62,57,107,0.07), 0 2px 9px 0 rgba(62,57,107,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  will-change: transform, box-shadow;
+}
+
+.hover-stylay:hover {
+  box-shadow: 0 16px 32px 0 rgba(62,57,107,0.28), 0 0 0 transparent;
+  transform: translateY(-5px) translateZ(0);
+}
+
+/****************/
+/* 	  MODAL     */
+/****************/
+
+.modal-custom {
+	margin-left: -100px !important; /* Provisoir */
+	width: 700px !important;
+}
+.modal-text-opener {
+	color: #FA7A50;
+	font-size: 20px;
+}
+.modal-text-opener:hover {
+	text-decoration: underline;
+}
+@media (max-width: 700px) {
+	.modal-custom {
+		margin: 0 auto;
+		max-width: 500px !important;
+	}
+}
+@media (max-width: 360px) {
+	.modal-custom {
+		margin: 0 auto;
+		max-width: 320px !important;
+	}
+}
+
+/***********/
+/* SIDEBAR */
+/***********/
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 .sidebar p { margin: 15px 0; line-height: 24px; color: gainsboro; }
 .sidebar a { color: dodgerblue; text-decoration: none; }
 .sidebar a:hover { color: #F96332; text-decoration: none; }
 
+.sidebar {
+	position: fixed;
+	z-index: 1000;
+}
 .left-navs {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
+
 
 .block-dash {
 	margin-top: 62px;
@@ -47,8 +95,13 @@
 	color: #333;
 	transform: scale(1.1) translateX(25px);
 }
+.my-profil {
+	margin-bottom: 20px;
+}
 
-/* PROGRESSAR */
+/****************/
+/* PROGRESS BAR */
+/****************/
 
 .clearfix:after {
     clear: both;
@@ -56,9 +109,7 @@
     display: block;
     height: 0;
 }
-
-
-.wrapper {
+.wrapper-progress {
 	display: table-cell;
 	/*height: 174px;*//*SIZE WITH BUTTON*/
 	height: 94px;
@@ -82,8 +133,7 @@ a:hover {
 	color: #999;
 }
 
-/* Breadcrups CSS */
-
+/* PROGRESS BAR STEPS */
 
 .arrow-steps .step {
 	font-size: 14px;
@@ -173,8 +223,14 @@ a:hover {
 .avatar-status:hover {
 	color: #F96332;
 }
+
+/******************************/
+/* TOOLS CLEAR SPACER ETC ETC */
+/******************************/
+
 .fa {
 	margin-left: 10px;
 }
-
-
+.spacer-left-40{
+	margin-left: 45px;
+}
